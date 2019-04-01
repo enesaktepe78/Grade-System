@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="sahne4" prefHeight="521.0" prefWidth="556.0" style="-fx-background-color: pink;" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Instructor">
+   <children>
+      <Button layoutX="21.0" layoutY="456.0" mnemonicParsing="false" onAction="#back3" text="Back" />
+      <TableView fx:id="tablo" layoutX="21.0" layoutY="245.0" prefHeight="200.0" prefWidth="407.0">
+        <columns>
+            <TableColumn fx:id="studentidT" prefWidth="253.0" text="StudentID" />
+            <TableColumn fx:id="gradeT" prefWidth="153.0" text="Grade" />
+        </columns>
+      </TableView>
+      <Label layoutX="21.0" layoutY="24.0" prefHeight="17.0" prefWidth="73.0" text="CourseID" />
+      <Label layoutX="22.0" layoutY="67.0" prefHeight="17.0" prefWidth="80.0" text="Course Name" />
+      <Label layoutX="21.0" layoutY="112.0" prefHeight="17.0" prefWidth="73.0" text="Quota" />
+      <TextField fx:id="courseid" layoutX="121.0" layoutY="20.0" prefHeight="25.0" prefWidth="176.0" />
+      <TextField fx:id="coursename" layoutX="121.0" layoutY="63.0" prefHeight="25.0" prefWidth="176.0" />
+      <TextField fx:id="quota" layoutX="121.0" layoutY="108.0" prefHeight="25.0" prefWidth="176.0" />
+      <ComboBox fx:id="combo" layoutX="21.0" layoutY="181.0" prefHeight="25.0" prefWidth="272.0" promptText="Student ID" />
+      <Button layoutX="341.0" layoutY="20.0" mnemonicParsing="false" onAction="#submit" text="Submit" />
+      <Label layoutX="26.0" layoutY="221.0" text="Grade" />
+      <TextField fx:id="grade" layoutX="117.0" layoutY="217.0" prefHeight="25.0" prefWidth="176.0" />
+      <Button layoutX="342.0" layoutY="63.0" mnemonicParsing="false" onAction="#delete" text="Delete" />
+      <Button layoutX="342.0" layoutY="108.0" mnemonicParsing="false" onAction="#update" text="Update" />
+      <ComboBox fx:id="courses" layoutX="21.0" layoutY="144.0" onAction="#courses" prefHeight="25.0" prefWidth="272.0" promptText="Courses" />
+      <Button layoutX="345.0" layoutY="157.0" mnemonicParsing="false" onAction="#grade" prefHeight="25.0" prefWidth="105.0" text="Grade" />
+      <Button layoutX="345.0" layoutY="194.0" mnemonicParsing="false" onAction="#gradeupdate" prefHeight="25.0" prefWidth="105.0" text="Grade Update" />
+      <DatePicker layoutX="341.0" layoutY="217.0" />
+   </children>
+</AnchorPane>

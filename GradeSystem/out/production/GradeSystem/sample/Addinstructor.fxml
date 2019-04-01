@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="addinstructor" prefHeight="521.0" prefWidth="556.0" style="-fx-background-color: pink;" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Addinstructor">
+   <children>
+      <Label layoutX="11.0" layoutY="285.0" text="InstructorID" />
+      <Label layoutX="10.0" layoutY="119.0" text="Name" />
+      <Label layoutX="15.0" layoutY="163.0" text="Surname" />
+      <Label layoutX="11.0" layoutY="206.0" text="Email" />
+      <Label layoutX="9.0" layoutY="244.0" prefHeight="17.0" prefWidth="63.0" text="Telephone" />
+      <Label layoutX="11.0" layoutY="27.0" text="Username" />
+      <Label layoutX="13.0" layoutY="73.0" text="Password" />
+      <TextField fx:id="instructorid" layoutX="129.0" layoutY="281.0" />
+      <TextField fx:id="name" layoutX="129.0" layoutY="115.0" />
+      <TextField fx:id="surname" layoutX="129.0" layoutY="159.0" />
+      <TextField fx:id="email" layoutX="129.0" layoutY="202.0" />
+      <TextField fx:id="telephone" layoutX="129.0" layoutY="240.0" />
+      <TextField fx:id="username" layoutX="129.0" layoutY="23.0" />
+      <TextField fx:id="password" layoutX="129.0" layoutY="69.0" />
+      <Button layoutX="363.0" layoutY="293.0" mnemonicParsing="false" onAction="#add" prefHeight="25.0" prefWidth="56.0" text="Submit" />
+      <Button layoutX="363.0" layoutY="336.0" mnemonicParsing="false" onAction="#delete" prefHeight="25.0" prefWidth="56.0" text="Delete" />
+      <Button layoutX="363.0" layoutY="379.0" mnemonicParsing="false" onAction="#update" text="Update" />
+      <ComboBox fx:id="instructors" layoutX="11.0" layoutY="379.0" prefHeight="25.0" prefWidth="286.0" promptText="Instructors" />
+      <Button layoutX="19.0" layoutY="433.0" mnemonicParsing="false" onAction="#back" prefHeight="25.0" prefWidth="47.0" text="Back" />
+   </children>
+</AnchorPane>
